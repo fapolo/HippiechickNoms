@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Satisfy&display=swap');
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: "Crimson Text", serif;
+}
