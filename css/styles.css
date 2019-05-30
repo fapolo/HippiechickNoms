@@ -64,6 +64,10 @@ p {
 	margin-bottom: 0.85em;
 }
 
+p:last-child {
+	margin-bottom: 0;
+}
+
 .section-title-small {
 	font-size: 1.5rem;
 }
@@ -177,6 +181,8 @@ nav a:focus {
 .about-us__intro {
 	background-color: var(--clr-accent);
 	background-image: url(../img/granola-bg.jpg);
+	background-size: cover;
+	background-position: center;
 	background-blend-mode: soft-light;
 	background-size: 100vh;
 	padding: 3em 1em 1.5em;
@@ -193,6 +199,8 @@ nav a:focus {
 .products {
 	display: flex;
 	flex-direction: column;
+	max-width: 30rem;
+	margin: 0 auto;
 }
 
 .product {
@@ -255,4 +263,41 @@ footer a {
 
 .footer-social a {
 	text-decoration: none;
+}
+
+@media only screen and (min-width: 750px) {
+	section {
+		padding: 6em 1em;
+	}
+
+	.about-us {
+		flex-direction: row;
+	}
+
+	.about-us__intro,
+	.about-us__body {
+		flex: 0 1 50%;
+		display: flex;
+		flex-direction: column;
+		padding: 4em 2em;
+		justify-content: center;
+	}
+
+	.about-us__intro {
+		text-align: right;
+	}
+
+	.about-us__intro > * {
+		max-width: 27rem;
+		margin-left: auto;
+	}
+
+	.about-us__body {
+		text-align: left;
+	}
+
+	.about-us__body > * {
+		max-width: 27rem;
+		margin-right: auto;
+	}
 }
